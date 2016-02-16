@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 class ColeccionDePaises {
@@ -27,5 +28,19 @@ class ColeccionDeHamburguesas {
     func obtenHamburguesa() ->String {
         
         return hamburguesas[Int (arc4random()) % hamburguesas.count]
+    }
+}
+
+class variosColores {
+    
+    let queColor = [
+        UIColor(red: 210/255.0, green: 54/255.0, blue: 33/255.0, alpha:1),
+        UIColor(red: 43/255.0, green: 200/255.0, blue: 255/255.0, alpha:1),
+        UIColor(red: 19/255.0, green: 38/255.0, blue: 180/255.0, alpha:1),
+        UIColor(red: 210/255.0, green: 190/255.0, blue: 5/255.0, alpha:1)]
+
+    func cambiaDeColor() ->UIColor {
+        
+        return queColor[Int (arc4random()) % queColor.count]
     }
 }

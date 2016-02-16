@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var burguerLabel: UILabel!
     
     let paisesCol:ColeccionDePaises = ColeccionDePaises()
-    let burguerCo:ColeccionDeHamburguesas = ColeccionDeHamburguesas()
+    let burguerCol:ColeccionDeHamburguesas = ColeccionDeHamburguesas()
+    let colorCol: variosColores = variosColores()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,10 +30,13 @@ class ViewController: UIViewController {
     @IBAction func wannaBurguer() {
         
         paisLabel.text = paisesCol.obtenPais()
-        burguerLabel.text = burguerCo.obtenHamburguesa()
+        burguerLabel.text = burguerCol.obtenHamburguesa()
         
-        // view.backgroundColor =
+        paisLabel.backgroundColor = colorCol.cambiaDeColor()
+        burguerLabel.backgroundColor = colorCol.cambiaDeColor()
         
-    }
+        view.backgroundColor = colorCol.cambiaDeColor()
+        
+        }
 }
 
