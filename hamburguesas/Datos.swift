@@ -37,7 +37,11 @@ class variosColores {
         UIColor(red: 210/255.0, green: 54/255.0, blue: 33/255.0, alpha:1),
         UIColor(red: 43/255.0, green: 200/255.0, blue: 255/255.0, alpha:1),
         UIColor(red: 19/255.0, green: 38/255.0, blue: 180/255.0, alpha:1),
-        UIColor(red: 210/255.0, green: 190/255.0, blue: 5/255.0, alpha:1)]
+        UIColor(red: 210/255.0, green: 190/255.0, blue: 5/255.0, alpha:1),
+        UIColor(red: 1/255.0, green: 2/255.0, blue: 3/255.0, alpha:1),
+        UIColor(red: 255/255.0, green: 1/255.0, blue: 213/255.0, alpha:1),
+        UIColor(red: 14/255.0, green: 2/255.0, blue: 211/255.0, alpha:1),
+        UIColor(red: 10/255.0, green: 10/255.0, blue: 10/255.0, alpha:1)]
 
     func cambiaDeColor() ->UIColor {
         
